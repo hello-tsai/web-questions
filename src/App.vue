@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
+<script>
+  // import welcome from "./views/welcome";
+  // import qQuestion from "./components/q-Question"
 
-<style>
+  export default {
+
+  }
+
+</script>
+
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,16 +21,17 @@
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-}
-
-#nav a {
+button{
+  background-color: cadetblue;
+  color: white;
+  border: 1px solid;
+  font-size: 16px;
+  border-radius: 10px;
   font-weight: bold;
-  color: #2c3e50;
+  padding: 5px;
+  &.disable {
+      background: rgba(180, 180, 180, 0.64);
+   }
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

@@ -1,0 +1,77 @@
+{
+  "question": [
+    {
+      "id": "1",
+      "question": "js有哪些基本数据类型？",
+      "type": "1",
+      "answer": "\"基本类型：String、Number、Boolean、Sy有mbol、Undefined、Null 复杂数据类型：Object \""
+    },
+    {
+      "id": "2",
+      "question": "如何阻止事件冒泡和默认事件？",
+      "type": "1",
+      "answer": "\"e.stopPropagation() e.preventDefault()， return false \""
+    },
+    {
+      "id": "3",
+      "question": "\" BFC是什么？触发的条件是什么？有什么作用？ \"",
+      "type": "1",
+      "answer": "\"BFC是块级格式化上下文  BFC的触发条件有： \t固定定位和绝对定位 \tfloat除了none外 \toverflow除了visible外（hidden、auto、scroll） \tdisplay为以下其一（inline-block、table-cell、table-caption） BFC的作用： \t清除浮动 \t消除margin重叠 \t布局（左浮动，右BFC自适应） \""
+    },
+    {
+      "id": "4",
+      "question": "var num = 1 num.numValue = 2 console.log(n.numValue) 打印的是什么？",
+      "type": "1",
+      "answer": "undefined"
+    },
+    {
+      "id": "5",
+      "question": "清除浮动的方式是什么？",
+      "type": "1",
+      "answer": "\".clear{   content:'';   display:block;   clear:both; }\""
+    },
+    {
+      "id": "6",
+      "question": "\"块级元素和行内元素的区别？img可设置宽高吗？ \"",
+      "type": "1",
+      "answer": "\"块级元素 独占一行，在默认情况下，其宽度自动填满其父元素的宽度 块级元素可以设置width、height属性 块级元素即使设置了宽度也是独占一行，块级元素可以设置margin、padding属性 行内元素 行内元素不会独占一行，相邻的行内元素会排列在同一行里，直到行排不下，就自动换行，其宽度随内容而变化 行内元素的width、height属性则无效 水平方向的padding、margin会产生边距效果，竖直方向的padding、margin不会产生边距效果 行内置换元素 浏览器依据元素的标签和属性来决定元素的具体显示内容 img、input、textarea、select、object属于行内置换元素， 具有块级元素的特征（除宽度外） \""
+    },
+
+    {
+      "id": 7,
+      "question": "什么是事件代理/事件委托",
+      "answer": "事件代理/事件委托是利用事件冒泡的特性，将本应该绑定在多个元素上的事件绑定在他们的祖先元素上，尤其在动态添加子元素的时候，可以非常方便的提高程序性能，减小内存空间。",
+      "type": "1"
+
+    },
+    {
+      "id": 8,
+      "question": "简述javascript中this的指向",
+      "answer": "第一准则是：this永远指向函数运行时所在的对象，而不是函数被创建时所在的对象。\n\n普通的函数调用，函数被谁调用，this就是谁。\n构造函数的话，如果不用new操作符而直接调用，那即this指向window。用new操作符生成对象实例后，this就指向了新生成的对象。\n匿名函数或不处于任何对象中的函数指向window 。\n如果是call，apply等，指定的this是谁，就是谁。\n箭头函数的this指向它的上下文，或者说它的外层作用域",
+      "type": "1"
+
+    },
+
+    {
+      "id": 9,
+      "question": "JavaScript里arguments究竟是什么？",
+      "answer": "Javascrip中国每个函数都会有一个Arguments对象实例arguments，它引用着函数的实参，可以用数组下标的方式\"[]\"引用arguments的元素。arguments.length为函数实参个数，arguments.callee引用函数自身。\n在函数代码中，使用特殊对象arguments，开发者无需明确指出参数名，通过使用下标就可以访问相应的参数。\n",
+      "type": "1"
+
+    },
+    {
+      "id": 10,
+      "question": "请解释一下JavaScript的同源策略",
+      "answer": "同源策略，即拥有相同的协议（protocol），端口（如果指定），主机（域名）的两个页面是属于同一个源。\n然而在IE中比较特殊，IE中没有将端口号加入同源的条件中，因此上图中端口不同那一项，在IE中是算同源的。\n<script> <img> <iframe>中的src，href都可以任意链接网络资源，是不遵循同源策略的。\n",
+      "type": "1"
+
+    },
+    {
+      "id": 11,
+      "question": "通过new创建一个对象的时候，构造函数内部有哪些改变？",
+      "answer": "创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。\n属性和方法被加入到 this 引用的对象中。\n新创建的对象由 this 所引用，并且最后隐式的返回 this 。",
+      "type": "1"
+
+    }
+  ]
+}
